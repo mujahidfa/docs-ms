@@ -2,33 +2,33 @@
 footer: false
 ---
 
-# Quick Start {#quick-start}
+# Mula Segera {#quick-start}
 
-## Try Vue Online {#try-vue-online}
+## Cuba Vue Dalam Talian {#try-vue-online}
 
-- To quickly get a taste of Vue, you can try it directly in our [Playground](https://sfc.vuejs.org/#eNo9j01qAzEMha+iapMWOjbdDm6gu96gG2/cjJJM8B+2nBaGuXvlpBMwtj4/JL234EfO6toIRzT1UObMexvpN6fCMNHRNc+w2AgwOXbPL/caoBC3EjcCCPU0wu6TvE/wlYqfnnZ3ae2PXHKMfiwQYArZOyYhAHN+2y9LnwLrarTQ7XeOuTFch5Am8u8WRbcoktGPbnzFOXS3Q3BZXWqKkuRmy/4L1eK4GbUoUTtbPDPnOmpdj4ee/1JVKictlSot8hxIUQ3Dd0k/lYoMtrglwfUPkXdoJg==).
+- Jika anda ingin cuba Vue dengan segera, anda boleh cuba di [Tapak Percubaan](https://sfc.vuejs.org/#eNo9j01qAzEMha+iapMWOjbdDm6gu96gG2/cjJJM8B+2nBaGuXvlpBMwtj4/JL234EfO6toIRzT1UObMexvpN6fCMNHRNc+w2AgwOXbPL/caoBC3EjcCCPU0wu6TvE/wlYqfnnZ3ae2PXHKMfiwQYArZOyYhAHN+2y9LnwLrarTQ7XeOuTFch5Am8u8WRbcoktGPbnzFOXS3Q3BZXWqKkuRmy/4L1eK4GbUoUTtbPDPnOmpdj4ee/1JVKictlSot8hxIUQ3Dd0k/lYoMtrglwfUPkXdoJg==).
 
-- If you prefer a plain HTML setup without any build steps, you can use this [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) as your starting point.
+- Jika anda gemar HTML kosong tanpa langkah bina, anda boleh guna [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) ini sebagai langkah permulaan anda.
 
-- If you are already familiar with Node.js and the concept of build tools, you can also try a complete build setup right within your browser on [StackBlitz](https://vite.new/vue).
+- Jika anda sudah biasa dengan Node.js dan konsep alat bina, anda boleh cuba pemasangan bina lengkap untuk Vue secara langsung dalam pelayar anda menggunakan [StackBlitz](https://vite.new/vue).
 
-## Creating a Vue Application {#creating-a-vue-application}
+## Mencipta Sebuah Aplikasi Vue {#creating-a-vue-application}
 
-:::tip Prerequisites
+:::tip Prasyarat
 
-- Familiarity with the command line
-- Install [Node.js](https://nodejs.org/) version 16.0 or higher
+- Biasa dengan garis perintah
+- Sudah pasang [Node.js](https://nodejs.org/) versi 16.0 atau lebih besar
   :::
 
-In this section we will introduce how to scaffold a Vue [Single Page Application](/guide/extras/ways-of-using-vue.html#single-page-application-spa) on your local machine. The created project will be using a build setup based on [Vite](https://vitejs.dev) and allow us to use Vue [Single-File Components](/guide/scaling-up/sfc) (SFCs).
+Dalam bahagian ini, kita akan memperkenalkan cara untuk membina sebuah [Aplikasi Halaman Tunggal](/guide/extras/ways-of-using-vue.html#single-page-application-spa) (SPA) Vue dalam mesin lokal anda. Projek ini akan menggunakan pemasangan bina berdasarkan [Vite](https://vitejs.dev), membolehkan anda untuk menggunakan [Komponen Fail Tunggal](/guide/scaling-up/sfc) (SFC) dalam Vue.
 
-Make sure you have an up-to-date version of [Node.js](https://nodejs.org/) installed, then run the following command in your command line (without the `>` sign):
+Pastikan anda sudah pasang versi [Node.js](https://nodejs.org/) yang terkini. Kemudian, jalankan perintah berikutnya pada garis perintah anda (tanpa kata kunci `>`):
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt;</span> <span style="color:#A6ACCD;">npm init vue@latest</span></span></code></pre></div>
 
-This command will install and execute [create-vue](https://github.com/vuejs/create-vue), the official Vue project scaffolding tool. You will be presented with prompts for several optional features such as TypeScript and testing support:
+Perintah ini akan pasang dan jalankan [create-vue](https://github.com/vuejs/create-vue), iaitu sebuah alat pembentukan projek yang rasmi untuk Vue. Anda akan diberikan beberapa soalan untuk memilih ciri harus (pilihan, bukan wajib) seperti TypeScript dan alat pengujian:
 
-<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Project name: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span></span>
+<div class="language-sh"><pre><code><span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Project name: <span style="color:#888;">… <span style="color:#89DDFF;">&lt;</span><span style="color:#888;">nama-projek-anda</span><span style="color:#89DDFF;">&gt;</span></span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add TypeScript? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add JSX Support? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Vue Router for Single Page Application development? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
@@ -38,52 +38,52 @@ This command will install and execute [create-vue](https://github.com/vuejs/crea
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add ESLint for code quality? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span style="color:var(--vt-c-green);">✔</span> <span style="color:#A6ACCD;">Add Prettier for code formatting? <span style="color:#888;">… <span style="color:#89DDFF;text-decoration:underline">No</span> / Yes</span></span>
 <span></span>
-<span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span>...</span>
+<span style="color:#A6ACCD;">Scaffolding project in ./<span style="color:#89DDFF;">&lt;</span><span style="color:#888;">nama-projek-anda</span><span style="color:#89DDFF;">&gt;</span>...</span>
 <span style="color:#A6ACCD;">Done.</span></code></pre></div>
 
-If you are unsure about an option, simply choose `No` by hitting enter for now. Once the project is created, follow the instructions to install dependencies and start the dev server:
+Jika anda tidak pasti nak pilih apa, buat masa sekarang anda boleh pilih `Tidak` (atau `No`) dengan menekan `Enter`. Setelah projek dicipta, ikut arahan berikut untuk pasang tanggungan (dependency) dan mulakan pelayan dev:
 
-<div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">cd</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&lt;</span><span style="color:#888;">your-project-name</span><span style="color:#89DDFF;">&gt;</span></span>
+<div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">cd</span><span style="color:#A6ACCD;"> </span><span style="color:#89DDFF;">&lt;</span><span style="color:#888;">nama-projek-anda</span><span style="color:#89DDFF;">&gt;</span></span>
 <span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm install</span></span>
 <span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run dev</span></span>
 <span class="line"></span></code></pre></div>
 
-You should now have your first Vue project running! Note that the example components in the generated project are written using the [Composition API](/guide/introduction.html#composition-api) and `<script setup>`, rather than the [Options API](/guide/introduction.html#options-api). Here are some additional tips:
+Tahniah, anda sudah berjaya cipta dan jalankan projek Vue pertama anda! Perlu dinyatakan di sini bahawa komponen-komponen contoh yang dihasilkan dalam projek di atas adalah ditulis menggunakan gaya [Composition API](/guide/introduction.html#composition-api) (API Komposisi) dan `<script setup>`, bukan [Options API](/guide/introduction.html#options-api) (API Pilihan). Berikut merupakan petua tambahan:
 
-- The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/) + [Volar extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you use other editors, check out the [IDE support section](/guide/scaling-up/tooling.html#ide-support).
-- More tooling details, including integration with backend frameworks, are discussed in the [Tooling Guide](/guide/scaling-up/tooling.html).
-- To learn more about the underlying build tool Vite, check out the [Vite docs](https://vitejs.dev).
-- If you choose to use TypeScript, check out the [TypeScript Usage Guide](typescript/overview.html).
+- Penggunaan IDE yang digalakkan ialah [Visual Studio Code](https://code.visualstudio.com/) + [penambah Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar). Jika anda guna penyunting lain, sila lihat [Bahagian Bantuan IDE](/guide/scaling-up/tooling.html#ide-support).
+- Untuk perincian peralatan lain termasuk cara mengintegrasi kepada kerangka bahagian belakang, anda boleh lihat di [Panduan Peralatan](/guide/scaling-up/tooling.html).
+- Untuk tahu lebih lanjut mengenai alat bina yang digunakan iaitu Vite, sila lihat [dokumentasi Vite](https://vitejs.dev).
+- Jika anda ingin guna TypeScript, sila lihat [Panduan Penggunaan TypeScript](typescript/overview.html).
 
-When you are ready to ship your app to production, run the following:
+Apabila anda sudah sedia untuk lancarkan aplikasi anda untuk pengeluaran, jalankan perintah berikut:
 
 <div class="language-sh"><pre><code><span class="line"><span style="color:var(--vt-c-green);">&gt; </span><span style="color:#A6ACCD;">npm run build</span></span>
 <span class="line"></span></code></pre></div>
 
-This will create a production-ready build of your app in the project's `./dist` directory. Check out the [Production Deployment Guide](/guide/best-practices/production-deployment.html) to learn more about shipping your app to production.
+Perintah tersebut akan menghasilkan jenis-bina aplikasi anda di dalam direktori `./dist` yang sedia untuk pengeluaran. Sila lihat [Panduan Pasang Atur Untuk Pengeluaran](/guide/best-practices/production-deployment.html) untuk ketahui lebih lanjut tentang cara memasang atur aplikasi anda untuk pengeluaran.
 
-[Next Steps >](#next-steps)
+[Langkah Seterusnya >](#next-steps)
 
-## Using Vue from CDN {#using-vue-from-cdn}
+## Guna Vue melalui CDN {#using-vue-from-cdn}
 
-You can use Vue directly from a CDN via a script tag:
+Anda boleh guna Vue secara terus melalui CDN dengan menggunakan tag `script`:
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 ```
 
-Here we are using [unpkg](https://unpkg.com/), but you can also use any CDN that serves npm packages, for example [jsdelivr](https://www.jsdelivr.com/package/npm/vue) or [cdnjs](https://cdnjs.com/libraries/vue). Of course, you can also download this file and serve it yourself.
+Contoh ini menggunakan [unpkg](https://unpkg.com/), tetapi anda dipersilakan untuk guna mana-mana CDN yang menyediakan bungkusan npm, seperti [jsdelivr](https://www.jsdelivr.com/package/npm/vue) atau [cdnjs](https://cdnjs.com/libraries/vue). Anda juga boleh muat turn fail tersebut dan gunakannya secara langsung.
 
-When using Vue from a CDN, there is no "build step" involved. This makes the setup a lot simpler, and is suitable for enhancing static HTML or integrating with a backend framework. However, you won't be able to use the Single-File Component (SFC) syntax.
+Apabila anda menggunakan Vue melalui CDN, anda tidak perlu melakukan apa-apa langkah bina. Ini merupakan kelebihan CDN; ia memudahkan proses pemasangan dan sesuai untuk menambahbaik HTML statik atau untuk tujuan integrasi dengan kerangka bahagian depan. Walaubagaimanapun, kekurangannya ialah anda tidak boleh guna sintaks Komponen Fail Tunggal (SFC) dengan cara ini.
 
-### Using the Global Build {#using-the-global-build}
+### Guna Jenis-Bina Global {#using-the-global-build}
 
-The above link loads the *global build* of Vue, where all top-level APIs are exposed as properties on the global `Vue` object. Here is a full example using the global build:
+Pautan di atas memuatkan Vue _jenis-bina global_ dimana semua API aras atas didedahkan sebagai sifat pada objek global `Vue`. Berikut ialah contoh penggunaan jenis-bina global tersebut:
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-<div id="app">{{ message }}</div>
+<div id="app">{{ mesej }}</div>
 
 <script>
   const { createApp } = Vue
@@ -91,16 +91,16 @@ The above link loads the *global build* of Vue, where all top-level APIs are exp
   createApp({
     data() {
       return {
-        message: 'Hello Vue!'
+        mesej: 'Apa khabar Vue!'
       }
     }
   }).mount('#app')
 </script>
 ```
 
-[JSFiddle demo](https://jsfiddle.net/yyx990803/nw1xg8Lj/)
+[Demo JSFiddle](https://jsfiddle.net/yyx990803/nw1xg8Lj/)
 
-### Using the ES Module Build {#using-the-es-module-build}
+### Guna Jenis-Bina ES Module {#using-the-es-module-build}
 
 Throughout the rest of the documentation, we will be primarily using [ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) syntax. Most modern browsers now support ES modules natively, so we can use Vue from a CDN via native ES modules like this:
 
