@@ -7,20 +7,20 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav: ThemeConfig['nav'] = [
   {
-    text: 'Docs',
+    text: 'Dokumentasi',
     activeMatch: `^/(guide|style-guide|cookbook|examples)/`,
     items: [
-      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'Panduan', link: '/guide/introduction' },
       { text: 'Tutorial', link: '/tutorial/' },
-      { text: 'Examples', link: '/examples/' },
-      { text: 'Quick Start', link: '/guide/quick-start' },
+      { text: 'Contoh', link: '/examples/' },
+      { text: 'Mula Segera', link: '/guide/quick-start' },
       // { text: 'Style Guide', link: '/style-guide/' },
       {
-        text: 'Vue 2 Docs',
+        text: 'Dokumentasi Vue 2',
         link: 'https://v2.vuejs.org'
       },
       {
-        text: 'Migration from Vue 2',
+        text: 'Pemindahan daripada Vue 2',
         link: 'https://v3-migration.vuejs.org/'
       }
     ]
@@ -31,32 +31,32 @@ const nav: ThemeConfig['nav'] = [
     link: '/api/'
   },
   {
-    text: 'Playground',
+    text: 'Tapak Percubaan',
     link: 'https://sfc.vuejs.org'
   },
   {
-    text: 'Ecosystem',
+    text: 'Ekosistem',
     activeMatch: `^/ecosystem/`,
     items: [
       {
-        text: 'Resources',
+        text: 'Sumber',
         items: [
-          { text: 'Partners', link: '/partners/' },
-          { text: 'Themes', link: '/ecosystem/themes' },
-          { text: 'Jobs', link: 'https://vuejobs.com/?ref=vuejs' },
-          { text: 'T-Shirt Shop', link: 'https://vue.threadless.com/' }
+          { text: 'Rakan Kongsi', link: '/partners/' },
+          { text: 'Tema', link: '/ecosystem/themes' },
+          { text: 'Pekerjaan', link: 'https://vuejobs.com/?ref=vuejs' },
+          { text: 'Kedai T-Shirt', link: 'https://vue.threadless.com/' }
         ]
       },
       {
-        text: 'Official Libraries',
+        text: 'Pustaka Rasmi',
         items: [
           { text: 'Vue Router', link: 'https://router.vuejs.org/' },
           { text: 'Pinia', link: 'https://pinia.vuejs.org/' },
-          { text: 'Tooling Guide', link: '/guide/scaling-up/tooling.html' }
+          { text: 'Panduan Alat', link: '/guide/scaling-up/tooling.html' }
         ]
       },
       {
-        text: 'Video Courses',
+        text: 'Kursus Video',
         items: [
           {
             text: 'Vue Mastery',
@@ -69,17 +69,17 @@ const nav: ThemeConfig['nav'] = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Bantuan',
         items: [
           {
-            text: 'Discord Chat',
+            text: 'Ruangan Bual Discord',
             link: 'https://discord.com/invite/HBherRA'
           },
           {
-            text: 'GitHub Discussions',
+            text: 'Perbincangan GitHub',
             link: 'https://github.com/vuejs/core/discussions'
           },
-          { text: 'DEV Community', link: 'https://dev.to/t/vue' }
+          { text: 'Komuniti DEV', link: 'https://dev.to/t/vue' }
         ]
       },
       {
@@ -87,36 +87,36 @@ const nav: ThemeConfig['nav'] = [
         items: [
           { text: 'Blog', link: 'https://blog.vuejs.org/' },
           { text: 'Twitter', link: 'https://twitter.com/vuejs' },
-          { text: 'Events', link: 'https://events.vuejs.org/' },
-          { text: 'Newsletters', link: '/ecosystem/newsletters' }
+          { text: 'Acara', link: 'https://events.vuejs.org/' },
+          { text: 'Surat Berita', link: 'https://news.vuejs.org/' }
         ]
       }
     ]
   },
   {
-    text: 'About',
+    text: 'Mengenai',
     activeMatch: `^/about/`,
     items: [
       { text: 'FAQ', link: '/about/faq' },
-      { text: 'Team', link: '/about/team' },
-      { text: 'Releases', link: '/about/releases' },
+      { text: 'Pasukan', link: '/about/team' },
+      { text: 'Pelepasan', link: '/about/releases' },
       {
-        text: 'Community Guide',
+        text: 'Panduan Komuniti',
         link: '/about/community-guide'
       },
-      { text: 'Code of Conduct', link: '/about/coc' },
+      { text: 'Tatakelakuan', link: '/about/coc' },
       {
-        text: 'The Documentary',
+        text: 'Dokumentari',
         link: 'https://www.youtube.com/watch?v=OrxmtDw4pVI'
       }
     ]
   },
   {
-    text: 'Sponsor',
+    text: 'Penaja',
     link: '/sponsor/'
   },
   {
-    text: 'Partners',
+    text: 'Rakan Kongsi',
     link: '/partners/',
     activeMatch: `^/partners/`
   }
@@ -125,20 +125,20 @@ const nav: ThemeConfig['nav'] = [
 export const sidebar: ThemeConfig['sidebar'] = {
   '/guide/': [
     {
-      text: 'Getting Started',
+      text: 'Permulaan',
       items: [
-        { text: 'Introduction', link: '/guide/introduction' },
+        { text: 'Pengenalan', link: '/guide/introduction' },
         {
-          text: 'Quick Start',
+          text: 'Cuba Segera',
           link: '/guide/quick-start'
         }
       ]
     },
     {
-      text: 'Essentials',
+      text: 'Asas',
       items: [
         {
-          text: 'Creating an Application',
+          text: 'Mencipta Aplikasi',
           link: '/guide/essentials/application'
         },
         {
